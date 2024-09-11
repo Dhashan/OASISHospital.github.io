@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth; 
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+
+.header{
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.header .logo i{
+    color: green;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: green;
+    margin-left: 2rem;
+}
+
+ .navbar a :hover{
+    color:darkgreen;
+}
+
+.navbar a.active, .navbar a:hover {
+    border-bottom: 2px solid darkgreen;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    color: green;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+
+}
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 1 1 45rem;
+
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: black;
+    
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color:black;
+    padding: 1rem 0;
+}
+
+
+.services h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: black;
+    font-size: 5rem;
+    text-decoration: none;
+}
+.services h1 span{
+    color: green;
+}
+
+.services p{
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+}
+
+.free-checkups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(203, 230, 203); 
+    border-radius: 8px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.content {
+    max-width: 900px; 
+    text-align: center; 
+}
+
+h1 {
+    font-size: 3rem; 
+    color: green; 
+    margin-bottom: 1rem; 
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.5rem;
+    color: black; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+h2 {
+    font-size: 2.5rem; 
+    color: black; 
+    margin-bottom: 1rem; 
+}
+
+ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem; 
+    font-size: 1.5rem; 
+    color:black; 
+    margin-bottom: 1.5rem; 
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    font-weight: bold; 
+}
+
+.btn {
+    display: inline-flex; 
+    align-items: center; 
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: green; 
+    background-color: whitesmoke; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: 3px solid green;
+  
+}
+
+.btn .fas {
+    margin-left: 8px; 
+}
+
+.btn:hover{
+    color: white;
+    background-color: green;
+}
+
+.ambulance-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(203, 230, 203); 
+    border-radius: 8px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.expert-doctors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(203, 230, 203); 
+    border-radius: 8px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.pharmacy-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(203, 230, 203); 
+    border-radius: 8px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.bed-facilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color:  rgb(203, 230, 203); 
+    border-radius: 8px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.total-care {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(203, 230, 203); 
+    border-radius: 8px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+.registration-link {
+    padding: 2rem;
+    background-color: #e9ecef;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    
+  }
+  
+  .registration-link a {
+    color: green;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .registration-link a:hover {
+    text-decoration: underline;
+  }
+
+.footer {
+    background-color: rgb(231, 228, 228); 
+    padding: 4rem 15rem;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: black; 
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color:black;
+    padding: 0.5rem 0;
+   
+    
+}
+
+.footer .box-container .box a i {
+    padding-right: 0.5rem;
+    color: green; 
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 1rem; 
+}
+
+.footer .box-container .box a:hover {
+    color: green; 
+}
+
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .credit span{
+    color: green;
+}
+
+
+
+/* Media queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .services h1, .free-checkups h1, .ambulance-services h1, .expert-doctors h1, .pharmacy-services h1, .bed-facilities h1, .total-care h1 {
+        font-size: 3rem;
+    }
+
+    .services p, .free-checkups p, .ambulance-services p, .expert-doctors p, .pharmacy-services p, .bed-facilities p, .total-care p {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: var(--box-shadow);
+        border: 1px solid green; 
+        width: 30rem;
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: transform 0.2s ease-out, opacity 0.2s ease-out; 
+    }
+
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+
+    .services h1, .free-checkups h1, .ambulance-services h1, .expert-doctors h1, .pharmacy-services h1, .bed-facilities h1, .total-care h1 {
+        font-size: 2.5rem;
+    }
+
+    .services p, .free-checkups p, .ambulance-services p, .expert-doctors p, .pharmacy-services p, .bed-facilities p, .total-care p {
+        font-size: 1.4rem;
+    }
+
+    .content {
+        padding: 1rem;
+        text-align: center; /* Center align text for better readability */
+    }
+
+    .content img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .services h1, .free-checkups h1, .ambulance-services h1, .expert-doctors h1, .pharmacy-services h1, .bed-facilities h1, .total-care h1 {
+        font-size: 2rem;
+    }
+
+    .services p, .free-checkups p, .ambulance-services p, .expert-doctors p, .pharmacy-services p, .bed-facilities p, .total-care p {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px){
+
+    .home .image img {
+        width: 100%;
+    }
+    .home h3 {
+        font-size: 24px;
+    }
+
+    .home p {
+        font-size: 16px;
+    }
+
+    .services h1 {
+        font-size: 3rem;
+    }
+    
+    .services p {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        padding: 5px;
+    }
+}

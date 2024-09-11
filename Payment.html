@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS Hospital</title>
+
+    <!--font awesome cdn link-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!--css file link-->
+    <link rel="stylesheet" href="./Paymentstyle.css">
+
+    <link rel="icon" href="./images/cardiology_8011424.png">
+   
+
+</head>
+<body>
+    <!--header section starts-->
+    <header class="header">
+        <a href="Index.html" class="logo"><i class="fas fa-heartbeat"></i>OASIS Hospital</a>
+
+        <nav class="navbar">
+            <a href="Index.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctors.html">Doctors</a>
+            <a href="Book.html">Book</a>
+            <a href="Pharmacy.html">Pharmacy</a>
+            <a href="Payment.html" class="active">Payment</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+
+    </header>
+    <!--header section ends-->
+
+    <!--home section starts-->
+    <section class="home" id="#">
+        <div class="image">
+            <img src="./images/Payment.png" alt="Payment">
+        </div>
+
+        <div class="content">
+            <h3>Welcome to Our Hospital Payment System</h3>
+            <p>At OASIS Hospital, we understand that managing your healthcare expenses efficiently is an integral part of your overall hospital experience. Our Payment System is designed to simplify and streamline the payment process, ensuring that you can focus on your recovery and well-being.
+                Our user-friendly payment system allows you to handle your medical bills with ease. Whether you are paying out-of-pocket or through insurance, our platform is equipped to provide a smooth and efficient payment experience.</p>
+            
+        </div>
+
+    </section>
+    <!--home section ends-->
+
+    <table>
+        <caption>Hospital <span> Payment </span> Rates</caption>
+        <thead>
+            <tr>
+                <th>Services</th>
+                <th>Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>General Consultation</td>
+                <td>Rs.1500</td>
+            </tr>
+            <tr>
+                <td>Routine Checkup</td>
+                <td>Rs.1000</td>
+            </tr>
+            <tr>
+                <td>Blood Test</td>
+                <td>Rs.750</td>
+            </tr>
+            <tr>
+                <td>X-Ray</td>
+                <td>Rs.200</td>
+            </tr>
+            <tr>
+                <td>CT Scan</td>
+                <td>Rs.500</td>
+            </tr>
+            <tr>
+                <td>Ultrasound</td>
+                <td>Rs.250</td>
+            </tr>
+            <tr>
+                <td>Emergency Room Visit</td>
+                <td>Rs.3000</td>
+            </tr>
+            <tr>
+                <td>Hospital Stay (Per Night)</td>
+                <td>Rs.1000</td>
+            </tr>
+            <tr>
+                <td>Surgery</td>
+                <td>Rs.25000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section class="payment" id="payment">
+        <h1 class="heading"><span>Our</span> Payment <span>System</span></h1>
+    </section>
+
+    <div class="payment-container">
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="patient-id">Patient ID:</label>
+                <input type="text" id="patient-id" name="patient-id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="insurance">Insurance</option>
+            </select>
+            </div>
+
+            <div class="form-group" id="credit-card-details" >
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number">
+                <label for="card-expiry">Expiry Date:</label>
+                <input type="text" id="card-expiry" name="card-expiry">
+                <label for="card-cvc">CVC:</label>
+                <input type="text" id="card-cvc" name="card-cvc">
+              
+            </div>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+
+    <!--footer section starts-->
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="./Index.html"><i class="fas fa-chevron-right"></i>Home</a>
+                <a href="./About us.html"><i class="fas fa-chevron-right"></i>About Us</a>
+                <a href="./Services.html"><i class="fas fa-chevron-right"></i>Services</a>
+                <a href="./Doctors.html"><i class="fas fa-chevron-right"></i>Doctors</a>
+                <a href="./Book.html"><i class="fas fa-chevron-right"></i>Book</a>
+                <a href="./Pharmacy.html"><i class="fas fa-chevron-right"></i>Pharmacy</a>
+                <a href="./Payment.html"><i class="fas fa-chevron-right"></i>Payment</a>
+            </div>
+    
+            <div class="box">
+                <h3>Our Services</h3>
+                <a href="./Services.html"><i class="fas fa-chevron-right"></i>Free Checkups</a>
+                <a href="./Services.html"><i class="fas fa-chevron-right"></i>24/7 Ambulance</a>
+                <a href="./Services.html"><i class="fas fa-chevron-right"></i>Expert Doctors</a>
+                <a href="./Services.html"><i class="fas fa-chevron-right"></i>Medicines</a>
+                <a href="./Services.html"><i class="fas fa-chevron-right"></i>Bed Facility</a>
+                <a href="./Services.html"><i class="fas fa-chevron-right"></i>Total Care</a>
+            </div>
+    
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="./Contact.html"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="./Contact.html"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="./Contact.html"><i class="fas fa-envelope"></i> OASISHospital@gmail.com</a>
+                <a href="./Contact.html"><i class="fas fa-envelope"></i> OASIS 123@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Kandy, Sri Lanka - 400104</a>
+            </div>
+    
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+            </div>
+        </div>
+    
+        <div class="credit">  &copy;Created by <span>Mr. Dhashan Bandara</span> |2024 OASIS Private Hospital</div>
+    </section>
+    <!--footer section ends-->
+
+    
+     <!--custom is file link-->
+     <script src="./script.js"></script>
+   
+
+
+    
+           
+</body>
+</html>
